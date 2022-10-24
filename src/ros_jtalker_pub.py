@@ -7,7 +7,7 @@ def talker():
     pub = rospy.Publisher('txt', String, queue_size=10)
     rospy.init_node('talker', anonymous=True)   
 
-    data = "しゃべるのらくやから"
+    data = "うんち"
     print (type(data))
     pub.publish(data)
     rospy.spin()
